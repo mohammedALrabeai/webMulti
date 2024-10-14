@@ -1,6 +1,6 @@
 <script type="text/javascript">
   var path = window.location.pathname;
-  if (!path.startsWith('/webMulti/') && path !== '/webMulti/') {
-    window.location.replace('/webMulti/' + path);
+  if (path !== '/webMulti/') {
+    window.location.replace('/webMulti/#' + path);
   }
 </script>
