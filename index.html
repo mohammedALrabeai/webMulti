@@ -81,8 +81,8 @@
     if ('serviceWorker' in navigator) {
       // Service workers are supported. Use them.
       window.addEventListener('load', function () {
-        // Use the "2560613766" token
-        var serviceWorkerUrl = 'flutter_service_worker.js?v="2560613766"';
+        // Use the "3288912198" token
+        var serviceWorkerUrl = 'flutter_service_worker.js?v="3288912198"';
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
             function waitForActivation(serviceWorker) {
@@ -97,7 +97,7 @@
               // No active web worker and we have installed or are installing
               // one for the first time. Simply wait for it to activate.
               waitForActivation(reg.installing ?? reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith('"2560613766"')) {
+            } else if (!reg.active.scriptURL.endsWith('"3288912198"')) {
               // When the app updates the serviceWorkerVersion changes, so we
               // need to ask the service worker to update.
               console.log('New service worker available.');
